@@ -1,0 +1,61 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 100%;
+}
+
+/* 
+   * Optional: Makes the sample page fill the window. 
+   */
+html,
+body {
+  font-family: Helvetica, sans-serif;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: sticky;
+  background-color: #202124;
+  color: white;
+}
+
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+@media (max-width: 1000px) {
+  .main-nav {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+    .info-window li {
+        padding: 0px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-window #risk-level {
+        display: none
+    }
+}
